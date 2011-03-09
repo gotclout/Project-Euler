@@ -1,0 +1,6 @@
+This repository maintains a set of selected solutions to Project Euler Problems found at http://projecteuler.net/
+Each solution implementation shall be implemented in the C++ programming language and compiled using g++ 4.0.1 until further notification.
+
+Be advised that by viewing this code, you are viewing solutions to the specified problems i.e. spoiler alert
+
+You should by no means use the source located in this repository in order to provide solutions to problems that you have not yet solved.  That being said, feel free to contact me if you are interested in discussing alternative solutions or flaws in the algorithms that I have used to obtain solutions. 
