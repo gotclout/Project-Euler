@@ -2,7 +2,7 @@
 #include <fstream>
 #include <time.h>
 
-#define dp(p0, p1) ((p0.x * p1.x) + (p0.y * p1.y)) 
+#define dp(p0, p1) ((p0.x * p1.x) + (p0.y * p1.y))
 
 using namespace std;
 
@@ -32,7 +32,7 @@ triangle next_triangle(ifstream & in, triangle & t)
 bool contains_origin(const triangle & t)
 {
   point v0, v1, v2;
-  
+
   double invDen, u, v;
 
   v0.x = t.c.x - t.a.x;
@@ -55,15 +55,15 @@ bool contains_origin(const triangle & t)
   return (u > 0 && v > 0) && (u + v < 1);
 }
 
-int main(char* argv[], int argc)
+int main(int argc, char**)
 {
   int      numOrigins = 0;
   clock_t  start, end;
   ifstream in;
-  triangle t;  
-  
+  triangle t;
+
   start = clock();
-  in.open("PEInputFiles/triangles.txt");
+  in.open("triangles.txt");
   for(int i = 0; i < n; i++)
   {
     t = next_triangle(in, t);
@@ -75,6 +75,6 @@ int main(char* argv[], int argc)
 
   cout << "Num Triangles Containing Origin: " << numOrigins << endl
        << "Computation Time: " << (end - start) / (double) CLOCKS_PER_SEC << "ms\n";
-  
+
   return 0;
 }
