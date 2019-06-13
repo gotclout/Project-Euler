@@ -63,7 +63,7 @@ int main(int argc, char**)
   triangle t;
 
   start = clock();
-  in.open("triangles.txt");
+  in.open("PEInputFiles/triangles.txt");
   for(int i = 0; i < n; i++)
   {
     t = next_triangle(in, t);
